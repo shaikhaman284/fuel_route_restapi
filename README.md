@@ -9,6 +9,10 @@ The API determines a driving route between a start and finish location, estimate
 - **Geocoding & Routing**: Integrates with the [OpenRouteService (ORS) API](https://openrouteservice.org/) to convert human-readable addresses into coordinates and calculate drivable routes.
 - **Smart Fuel Optimization**: Uses spatial data (`us_states.geojson`) and Shapely to determine which US states the route passes through. It evaluates fuel prices using a provided `fuel_prices.csv` to ensure stops are made in the cheapest possible states within the vehicle's remaining range.
 - **Interactive Map Generation**: Generates an interactive Folium map (`HTML`) visualizing the route, state borders, and optimal fuel stops.
+
+![Fuel Route Map Screenshot](screenshots/ss1.png)
+![Fuel Route Map Screenshot](screenshots/ss2.png)
+
 - **Stateless & High-Performance**: Operates completely in-memory (no database required). Heavy geometric lookups and state bounding boxes are pre-loaded at startup, and price queries are cached per request for ultra-fast performance.
 
 ## Prerequisites
