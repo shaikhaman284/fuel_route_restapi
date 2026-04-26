@@ -25,8 +25,8 @@ The API determines a driving route between a start and finish location, estimate
 
 1. **Clone the repository** (or download the source):
    ```bash
-   git clone <your-repo-url>
-   cd Optimal_Location_REstAPI
+   git clone https://github.com/shaikhaman284/fuel_route_restapi.git
+   cd fuel_route_restapi
    ```
 
 2. **Create and activate a virtual environment**:
